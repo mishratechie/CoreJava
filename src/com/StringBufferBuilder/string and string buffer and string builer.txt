@@ -1,0 +1,64 @@
+Difference between String and StringBuffer/StringBuilder in Java
+
+Well, the most important difference between String and StringBuffer/StringBuilder in java is that String object is immutable whereas StringBuffer/StringBuilder objects are mutable.
+
+By immutable, we mean that the value stored in the String object cannot be changed. Then the next question that comes to our mind is “If String is immutable then how am I able to change the contents of the object whenever I wish to?” . Well, to be precise it’s not the same String object that reflects the changes you do. Internally a new String object is created to do the changes.
+
+So suppose you declare a String object:
+
+String myString = “Hello”;
+
+Next, you want to append “Guest” to the same String. What do you do?
+
+myString = myString + ” Guest”;
+
+When you print the contents of myString the output will be “Hello Guest”. Although we made use of the same object(myString), internally a new object was created in the process. So, if you were to do some string operation involving an append or trim or some other method call to modify your string object, you would really be creating those many new objects of class String.
+
+Now isn’t that a performance issue?
+
+Yes, it definitely is.
+
+Then how do you make your string operations efficient?
+
+By using StringBuffer or StringBuilder.
+
+How would that help?
+
+Well, since StringBuffer/StringBuilder objects are mutable, we can make changes to the value stored in the object. What this effectively means is that string operations such as append would be more efficient if performed using StringBuffer/StringBuilder objects than String objects.
+
+Finally, whats the difference between StringBuffer and StringBuilder?
+
+StringBuffer and StringBuilder have the same methods with one difference and that’s of synchronization. StringBuffer is synchronized( which means it is thread safe and hence you can use it when you implement threads for your methods) whereas StringBuilder is not synchronized( which implies it isn’t thread safe).
+
+So, if you aren’t going to use threading then use the StringBuilder class as it’ll be more efficient than StringBuffer due to the absence of synchronization.
+
+Incase you do not know – Here’s how you use StringBuilder
+
+A simple Example to demonstrate that String object is Immutable
+
+Incase you still have any doubts regarding String or StringBuilder then do leave a comment. I’ll be more than eager to help you out.
+
+Note: StringBuilder was introduced in Java 1.5 (so if you happen to use versions 1.4 or below you’ll have to use StringBuffer) 
+
+
+===================
+
+
+Case-1 :
+
+String str="Good";
+str=str+" Morning";
+
+In the above code you create 3 String Objects.
+
+    "Good" it goes into the String Pool.
+    "Morning" it goes into the String Pool as well.
+    "GoodMorning" created by concatenating "Good" and"Morning" . This guy goes on the Heap.
+
+Note : Strings are always immutable. There is no, such thing as a mutable String. str is just a reference which eventually points to "GoodMorning". You are actually, not working on 1 object. you have 3 distinct String Objects.
+
+Case-2 :
+
+StringBuffer str= new StringBuffer("Good"); str.append(" Morning");
+
+StringBuffer contains an array of characters. It is not same as a String. The above code adds characters to the existing array. Effectively, StringBuffer is mutable, its String representation isn't.

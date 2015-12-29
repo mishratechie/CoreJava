@@ -1,0 +1,16 @@
+Marker interface in Java is interfaces with no field or methods or in simple word empty interface in java is called marker interface.
+Example of market interface is Serializable, Clonnable and Remote interface. 
+Now if marker interface doesn't have any field or method or behavior they why would Java needs it? 
+This was asked to my friend in one of his core java interview and then I thought to touch based on it. 
+
+In this article we will see couple of reason on what marker interface do in Java and what is use of marker interface in Java. 
+Marker interface are also called tag interface in Java.
+
+
+Looking carefully on marker interface in Java e.g. Serializable, Clonnable and Remote it looks they are used to indicate something to compiler or JVM. 
+
+"So if JVM sees a Class is Serializable it does some special operation on it,"
+
+similar way if JVM sees one Class is implement Clonnable it performs some operation to support cloning.
+Same is true for RMI and Remote interface.
+So in short Marker interface indicate, signal or a command to Compiler or JVM.

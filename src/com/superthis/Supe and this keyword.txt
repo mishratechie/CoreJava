@@ -1,0 +1,9 @@
+http://www.javatutorialhub.com/java-this-keyword.html
+
+-----------------
+
+The“this” is a reference to the current object, whose method is being called upon.
+You can use “this” keyword to avoid naming conflicts in the method/constructor of 	your instance/object.
+
+------------------
+The super keyword enables a subclass to call the methods and fields of its superclass. It is not an instance of the superclass object but a way to tell the compiler which methods or fields to reference. The effect is the same as if the subclass is calling one of its own methods. 
