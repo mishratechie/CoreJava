@@ -1,4 +1,4 @@
-package com.control.statements;
+package com.controlStatements;
 
 /** You can have nested for loops. ie, you can
 		have a for loop nested inside another for loop.

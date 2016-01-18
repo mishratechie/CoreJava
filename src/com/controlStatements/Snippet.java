@@ -1,4 +1,4 @@
-package com.control.statements;
+package com.controlStatements;
 
 public class Snippet {
 	public static void main(String[] args) {

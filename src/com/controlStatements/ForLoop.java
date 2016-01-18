@@ -1,4 +1,4 @@
-package com.control.statements;
+package com.controlStatements;
 
 class ForLoop
 {

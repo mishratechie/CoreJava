@@ -1,6 +1,6 @@
-package com.control.statements;
+package com.controlStatements;
 
-class WhileLoop
+class WhileLoopBreak
 {
 		public static void main(String args[])
 		{
@@ -8,6 +8,9 @@ class WhileLoop
 
 				while(i<10)
 				{
+						if(i==7)
+								break;
+
 						System.out.println("i Value is ... :	" + i);
 						i++;
 				}

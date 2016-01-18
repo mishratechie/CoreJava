@@ -1,7 +1,6 @@
-package com.control.statements;
+package com.controlStatements;
 
-
-public class DoWhileLoop
+class DoWhileLoopContinue
 {
 		public static void main(String args[])
 		{
@@ -9,10 +8,14 @@ public class DoWhileLoop
 
 				do
 				{
+						if(i==2)
+						{
+								i++;
+								continue;
+						}
 						System.out.println("i Value is ... :	" + i);
 						i++;
-				}while(i<10);
-				System.out.println("");
+				}while(i<5);
 
 				System.out.println("");
 				System.out.println("End of the do-while loop...");

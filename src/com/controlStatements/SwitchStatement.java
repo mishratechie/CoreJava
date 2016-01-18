@@ -1,6 +1,6 @@
-package com.control.statements;
+package com.controlStatements;
 
-public class IfElseCascade
+public class SwitchStatement
 {
 		public static void main(String args[])
 		{
@@ -17,22 +17,17 @@ public class IfElseCascade
 				catch(Exception e)
 				{}
 
-				if(ch=='a')
+				switch(ch)
 				{
-						i = 10;
+					case 'a'	: 	i = 10;
+										break;
+					case 'b'	: 	i = 20;
+										break;
+					case 'c'	: 	i = 30;
+										break;
+					default	: 	i = 40;
+										break;
 				}
-				else if(ch=='b')
-				   {
-							i = 20;
-				   }
-				else if(ch=='c')
-				   {
-							i = 30;
-				   }
-				else if(ch=='d')
-				   {
-							i = 40;
-				   }
 
 				System.out.println("i Value is ...	:	" + i);
 		}

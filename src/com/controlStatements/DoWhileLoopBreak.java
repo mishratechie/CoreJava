@@ -1,6 +1,6 @@
-package com.control.statements;
+package com.controlStatements;
 
-class DoWhileLoopContinue
+class DoWhileLoopBreak
 {
 		public static void main(String args[])
 		{
@@ -9,10 +9,8 @@ class DoWhileLoopContinue
 				do
 				{
 						if(i==2)
-						{
-								i++;
-								continue;
-						}
+								break;
+
 						System.out.println("i Value is ... :	" + i);
 						i++;
 				}while(i<5);

@@ -1,4 +1,4 @@
-package com.control.statements;
+package com.controlStatements;
 
 /** When a break statement is executed, it
 		causes the flow of control to pass out of
