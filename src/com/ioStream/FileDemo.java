@@ -6,6 +6,7 @@ class FileDemo
     static void p(String s)
     {
 		System.out.println(s);
+		
     }
 
     public static void main(String args[])

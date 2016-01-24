@@ -14,7 +14,7 @@ class EnvironmentPropDemo
 
 		System.out.println("Operating System Name : "	+ System.getProperty("os.name"));
 
-	System.out.println("Operating System Version : " + System.getProperty("os.version"));
+		System.out.println("Operating System Version : " + System.getProperty("os.version"));
 
 		System.out.println("File Separator : "	+ System.getProperty("file.separator"));
 
@@ -24,7 +24,7 @@ class EnvironmentPropDemo
 
 		System.out.println("Java Class Path: "	+ System.getProperty("java.class.path"));
 
-System.out.println("Java Class Version : "	+ System.getProperty("java.class.version"));
+		System.out.println("Java Class Version : "	+ System.getProperty("java.class.version"));
 
 		System.out.println("Java Home : "	+ System.getProperty("java.home"));
 

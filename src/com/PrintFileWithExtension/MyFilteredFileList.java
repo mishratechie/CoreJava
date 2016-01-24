@@ -8,7 +8,7 @@ import java.io.FilenameFilter;
 public class MyFilteredFileList {
      
     public static void main(String a[]){
-        File file = new File("C:/Reports/GeneratedReports/14-8-14/MainInt_SimpleApp_Scenario_Iteration1/MainInt_SimpleApp_Scenario_Iteration1_0_Results_20-08-2014_files");
+        File file = new File("C:/Reports/");
         File[] files = file.listFiles(new FilenameFilter() {
              
             @Override

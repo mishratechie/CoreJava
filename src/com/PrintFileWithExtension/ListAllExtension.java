@@ -12,7 +12,7 @@ public class ListAllExtension {
 		//ListAllExtension an=new ListAllExtension();
 		ArrayList<String> toCatch=new ArrayList<String>();
 		
-		File directoryName=new File("C:/Reports/GeneratedReports/14-8-14/");
+		File directoryName=new File("C:/Reports/");
 		//walkin(directoryName);
 		toCatch=walkin(directoryName);
 		System.out.println(toCatch.size());

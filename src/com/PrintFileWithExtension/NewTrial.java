@@ -10,7 +10,7 @@ public class NewTrial {
 	
 	public static void main(String[] args) {
 		NewTrial a=new NewTrial();
-		String directoryName="C:/Reports/GeneratedReports/14-8-14/";
+		String directoryName="C:/Reports/";
 		a.listf(directoryName);
 	}
 	

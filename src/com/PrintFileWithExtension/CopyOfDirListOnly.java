@@ -7,12 +7,12 @@ class CopyOfDirListOnly
 {
     public static void main(String args[])
     {
-		String dirname = "D:/Ashu-Personal/Picks/MarriageTrip/200Selected/CD4-101/1";//provide dir location
+		String dirname = "C:/Users/Ashutosh/Pictures/2015/2015-11-08";//provide dir location
 		
 
 		File f = new File(dirname);
 
-		FilenameFilter only = new OnlyExt("JPG");
+		FilenameFilter only = new OnlyExt("JPG");//Extension of filename which you want to be printed
 
 		String s[] = f.list(only);
 
