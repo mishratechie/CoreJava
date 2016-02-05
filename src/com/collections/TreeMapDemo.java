@@ -1,12 +1,13 @@
 package com.collections;
 import java.util.*;
+import java.util.Map.Entry;
 
 class TreeMapDemo
 {
 	public static void main(String[] args) 
 	{
 		//create a Tree map
-		TreeMap tm = new TreeMap();
+		TreeMap<String, Double> tm = new TreeMap<String, Double>();
 
 		//put elements to Tree map
 		tm.put("Aloke", new Double(3434.34));
@@ -16,15 +17,15 @@ class TreeMapDemo
         tm.put("Chiranjeevi", new Double(-19.08));
         
 		//get a set of entries
-		Set set = tm.entrySet();
+		Set<Entry<String, Double>> set = tm.entrySet();
 
 		//get an iterator
-		Iterator it = set.iterator();
+		Iterator<Entry<String, Double>> it = set.iterator();
 
 		//display elements
 		while(it.hasNext())
 		{
-			Map.Entry me = (Map.Entry)it.next();
+			Entry<String, Double> me = it.next();
 
 			System.out.print(me.getKey() + "  :  ");
 
@@ -34,7 +35,7 @@ class TreeMapDemo
 		System.out.println();
 		
 		// Deposit 1000 into Gopi's account
-		double balance=((Double)tm.get("Gopi")).doubleValue();
+		double balance=tm.get("Gopi").doubleValue();
 
 		tm.put("Gopi", new Double(balance+1000));
     

@@ -1,12 +1,13 @@
 package com.collections;
 import java.util.*;
+import java.util.Map.Entry;
 
 class  HashMapDemo
 {
 	public static void main(String[] args) 
 	{
 		//create a hash map
-		HashMap hm = new HashMap();
+		HashMap<Object,Object> hm = new HashMap<Object,Object>();
 
 		//put elements to map
 		hm.put("Aloke", new Double(3434.34));
@@ -16,15 +17,16 @@ class  HashMapDemo
         hm.put("Chiranjeevi", new Double(-19.08));
 
 		//get a set of entries
-		Set set = hm.entrySet();
+		Set<Entry<Object, Object>> set = hm.entrySet();
 
 		//get an iterator
-		Iterator i = set.iterator();
+		Iterator<Entry<Object, Object>> i = set.iterator();
 
 		//display elements
 		while(i.hasNext())
 		{
-			Map.Entry me=(Map.Entry)i.next();
+			//Map.Entry me=(Map.Entry)i.next(); // This will have warnings Uncomment to see the warning
+			Entry<Object, Object> me=i.next();
 
 			System.out.print(me.getKey() + " : ");
 

@@ -7,31 +7,29 @@ Node next;
 
 public class LinkedList {
 
+	public static Node head;
+	public static Node temp;
+	public static Node node;
+	
 	public static void main(String[] args) {
 		
 	
-	Node head = new Node();
-	Node temp = head;
+	head = new Node();
+	temp = head;
 	
 	head = null;
 	
 	//---------- Node creation
-	Node node  =new Node();
+	node  =new Node();
 	node.num=10;
 	node.next=null;
 	//----------
 	
+	makeHeadAsNode(head,node);
 	
-	//now put the above created node in list
-	if(head==null)
-		head = node;
-	else{
-		temp.next = node;
-		temp=node;
-	}
-	//-------	
 	
-	//to displau
+	
+	//to display
 	temp=head;
 	while (temp!=null) {
 		
@@ -40,6 +38,22 @@ public class LinkedList {
 		temp=temp.next;
 		
 	}
+	
 		
 	}
-}
+	
+	private static void makeHeadAsNode(Node head2, Node node2) {
+		
+		
+		if(head==null){
+			head = node;
+		}
+		else{
+			
+			temp.next=node;
+			temp=node;
+		}
+		
+	}
+
+	}

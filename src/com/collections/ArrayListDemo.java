@@ -7,7 +7,7 @@ class ArrayListDemo
 	public static void main(String[] args) throws InterruptedException 
 	{
 		// create an ArrayList
-		ArrayList al = new ArrayList();
+		ArrayList<String> al = new ArrayList<String>();
 
 		// Initial size of an ArrayList
 		System.out.println("Initial size of al : " + al.size());
@@ -20,7 +20,7 @@ class ArrayListDemo
 		al.add("D");
 		al.add("F");
 		
-		Iterator s=al.iterator();
+		Iterator<String> s=al.iterator();
 		while(s.hasNext())
 		{
 			System.out.println(s.next());

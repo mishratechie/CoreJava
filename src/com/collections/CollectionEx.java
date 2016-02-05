@@ -9,14 +9,14 @@ public class CollectionEx {
 
 	
 	public static void main(String[] args) {
-		Collection c=new ArrayList();
+		Collection<Object> c=new ArrayList<Object>();
 		
 		c.add(1);
 		c.add("hello");
 		c.add("2");
 		c.add("welcome");
 		
-		Iterator i=c.iterator();
+		Iterator<Object> i=c.iterator();
 		
 		
 		if(c.isEmpty())

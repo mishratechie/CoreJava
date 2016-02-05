@@ -7,9 +7,9 @@ class HTDemo
 {
 	public static void main(String[] args) 
 	{
-		Hashtable ht = new Hashtable();
+		Hashtable<String, Double> ht = new Hashtable<String, Double>();
 
-		Enumeration names;
+		Enumeration<String> names;
 		String str;
 		double bal;
 
@@ -23,14 +23,14 @@ class HTDemo
 
 		while(names.hasMoreElements())
 		{
-			str = (String)names.nextElement();
+			str = names.nextElement();
 			System.out.println(str + " " +ht.get(str));
 		}
 
 		System.out.println();
 
 		// Deposit 1000 into John's Account
-		bal = ((Double)ht.get("John")).doubleValue();
+		bal = ht.get("John").doubleValue();
 
 		ht.put("John", new Double(bal+1000));
 

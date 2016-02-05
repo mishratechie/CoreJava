@@ -30,7 +30,7 @@ public class CompareVersions {
 
 		
 		int ver1splitSize=ver1split.length;
-		int ver2splitSize=ver2split.length;
+		
 		
 		for (int i=0;i<ver1splitSize;i++){
 			

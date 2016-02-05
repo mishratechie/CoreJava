@@ -1,11 +1,12 @@
 package com.collections;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 public class Hashmap {
         public static void main(String[] args) {
         	  
-        	HashMap hash = new HashMap();
+        	HashMap<Object,Object> hash = new HashMap<Object,Object>();
                 hash.put("roll", new Integer(12));
                 hash.put("rollno", 13);
                 hash.put(null,null);
@@ -19,8 +20,8 @@ public class Hashmap {
                 System.out.println("Get Method : "+hash.get("age"));
                 System.out.println();
                 
-                Set s = hash.entrySet();
-                Iterator i = s.iterator();
+                Set<Entry<Object, Object>> s = hash.entrySet();
+                Iterator<Entry<Object, Object>> i = s.iterator();
                 while (i.hasNext()) {
                         System.out.println(i.next());
                 }

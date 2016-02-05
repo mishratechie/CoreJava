@@ -14,7 +14,7 @@ public class GenericMethodTest
 
     public static void main( String args[] )
     {
-    	GenericMethodTest gt=new GenericMethodTest();
+    	
     	
         // Create arrays of Integer, Double and Character
         Integer[] intArray = { 1, 2, 3, 4, 5 };
@@ -22,13 +22,13 @@ public class GenericMethodTest
         Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
 
         System.out.println( "Array integerArray contains:" );
-        gt.printArray( intArray  ); // pass an Integer array
+        GenericMethodTest.printArray( intArray  ); // pass an Integer array
 
         System.out.println( "\nArray doubleArray contains:" );
-        gt.printArray( doubleArray ); // pass a Double array
+        GenericMethodTest.printArray( doubleArray ); // pass a Double array
 
         System.out.println( "\nArray characterArray contains:" );
-        gt.printArray( charArray ); // pass a Character array
+        GenericMethodTest.printArray( charArray ); // pass a Character array
     } 
     
     /*

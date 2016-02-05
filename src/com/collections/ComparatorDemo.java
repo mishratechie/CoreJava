@@ -12,7 +12,7 @@ For example, to sort in reverse order, you can create a comparator that reverses
  * 
  * */
 // A reverse comparator of strings
-class MyComp implements Comparator
+class MyComp implements Comparator<Object>
 {
 	public int compare(Object a, Object b)
 	{
@@ -31,7 +31,7 @@ class ComparatorDemo
 	public static void main(String[] args) 
 	{
 		// create a tree set
-		TreeSet ts = new TreeSet(new MyComp());
+		TreeSet<Object> ts = new TreeSet<Object>(new MyComp());
 
 		// add elements to the tree set
 		ts.add("C");
@@ -44,7 +44,7 @@ class ComparatorDemo
 		// use iterator to display contents of 'ts'		
 		System.out.println("Original contents of ts : ");
 
-		Iterator itr = ts.iterator();
+		Iterator<Object> itr = ts.iterator();
 
 		// Display elements
 		while(itr.hasNext())

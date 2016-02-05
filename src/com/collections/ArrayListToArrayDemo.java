@@ -7,7 +7,7 @@ class ArrayListToArrayDemo
 	public static void main(String[] args) 
 	{
 		// create an ArrayList
-		ArrayList al = new ArrayList();
+		ArrayList<Integer> al = new ArrayList<Integer>();
 
 		// Initial size of an ArrayList
 		System.out.println("Initial size of al : " + al.size());

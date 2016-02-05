@@ -6,7 +6,7 @@ class HashSetDemo
 	public static void main(String[] args) 
 	{
 		//Create a hash set
-		HashSet hs = new HashSet();
+		HashSet<String> hs = new HashSet<String>();
 
 		//add elements to hash set
 		hs.add("E");

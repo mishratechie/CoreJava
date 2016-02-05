@@ -1,7 +1,6 @@
 package com.collections;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
 
@@ -10,13 +9,13 @@ public class ListEx {
 	
 	public static void main(String[] args) {
 	
-		List l=new ArrayList();
+		List<Integer> l=new ArrayList<Integer>();
 		//List l=new LinkedList();
 		
 		l.add(1);
 		l.add(2);
 		l.add(null);
-		Iterator i=l.iterator();
+		Iterator<Integer> i=l.iterator();
 		
 		while(i.hasNext())
 		{

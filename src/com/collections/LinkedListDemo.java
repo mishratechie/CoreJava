@@ -6,7 +6,7 @@ class LinkedListDemo
 	public static void main(String[] args) 
 	{
 		// add elements to linked list 
-		LinkedList ll =new LinkedList();
+		LinkedList<String> ll =new LinkedList<String>();
 		
 		ll.add("A");
 		ll.add("E");

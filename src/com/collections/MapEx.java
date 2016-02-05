@@ -1,8 +1,7 @@
 package com.collections;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 
@@ -10,7 +9,7 @@ public class MapEx {
 
 	
 	public static void main(String[] args) {
-		HashMap m = new HashMap();
+		HashMap<String, Object> m = new HashMap<String, Object>();
 		//LinkedHashMap  m=new LinkedHashMap();
 		//TreeMap m=new TreeMap();
         m.put("roll", new Integer(12));
@@ -25,8 +24,8 @@ public class MapEx {
         
         //entrySetReturns a Set view of the mappings contained in this map. 
         //The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. 
-        Set s = m.entrySet();
-        Iterator i = s.iterator();
+        Set<Entry<String, Object>> s = m.entrySet();
+        Iterator<Entry<String, Object>> i = s.iterator();
         while (i.hasNext()) {
                 System.out.println(i.next());
         }

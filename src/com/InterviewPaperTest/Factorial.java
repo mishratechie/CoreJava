@@ -12,6 +12,7 @@ import java.util.Scanner;
  * */
 public class Factorial {
 
+	private static Scanner scanner;
 	public void factorial(int num)
 	{
 		int i=1;
@@ -27,11 +28,11 @@ public class Factorial {
 	}
 	public static void main(String[] args) {
 		
-		Scanner s=new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		
 		System.out.println("Enter a number to find factorial of it :");
 		
-		int num=s.nextInt();
+		int num=scanner.nextInt();
 		
 		Factorial se=new Factorial();
 		se.factorial(num);

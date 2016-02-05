@@ -11,7 +11,7 @@ public class prob2 {
 public static int solution(int N){
 		
 		int power=0;
-		int div=1;
+		
 
 		do{
 			power++;

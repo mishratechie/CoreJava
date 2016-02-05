@@ -6,7 +6,7 @@ class IteratorDemo
 	public static void main(String[] args) 
 	{
 		// create an array list
-		ArrayList al = new ArrayList();
+		ArrayList<String> al = new ArrayList<String>();
 
 		// add elements to the array list
 		al.add("C");
@@ -19,7 +19,7 @@ class IteratorDemo
 		// use iterator to display contents of 'al'		
 		System.out.println("Original contents of al : ");
 
-		Iterator itr = al.iterator();
+		Iterator<String> itr = al.iterator();
 
 		while(itr.hasNext())
 		{
@@ -30,7 +30,7 @@ class IteratorDemo
 		System.out.println();
 
 		// Modify objects being itareted
-		ListIterator litr = al.listIterator();
+		ListIterator<String> litr = al.listIterator();
 
 		while(litr.hasNext())
 		{

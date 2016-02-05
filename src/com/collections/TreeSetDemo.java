@@ -5,7 +5,7 @@ class  TreeSetDemo
 {
 	public static void main(String[] args) 
 	{
-		TreeSet hs = new TreeSet();
+		TreeSet<String> hs = new TreeSet<String>();
 
 		//add elements to tree set
 		hs.add("C");

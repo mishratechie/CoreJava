@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class loopPerfect {
 
 	
+	private static Scanner scanner;
+
 	public static void main(String[] args) {
 		
-		Scanner s=new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		System.out.println("Enter a range to list perfect numbers :");
-		int range=s.nextInt();
+		int range=scanner.nextInt();
 		//Enter 6
 		
 		for(int num=1;num<=range;num++)

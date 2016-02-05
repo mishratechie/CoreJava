@@ -7,7 +7,7 @@ class VectorDemo
 	public static void main(String[] args) 
 	{
 		// Initial size is 3 increment is 2
-		Vector v = new Vector(3, 2);
+		Vector<Number> v = new Vector<Number>(3, 2);
 
 		// Size
 		System.out.println("Initial size : " + v.size());
