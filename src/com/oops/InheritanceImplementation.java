@@ -6,7 +6,7 @@ class ParentClasss
 	   int x =10;
 
 	   public void pmethod()
-	  {
+	   {
 		   System.out.println("Inside Parent class");
 	   }
 }
@@ -16,7 +16,7 @@ class ChildClasss extends ParentClasss
 	     int y = 20;
 
 		 public void cmethod()
-	    {
+	     {
 				System.out.println("Inside Child class");
 		 } 
 };

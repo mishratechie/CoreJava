@@ -39,15 +39,7 @@ public class LongestLine {
 		}
 		 System.out.println("Longest Line is  : "+longLine);
 		
-		
 	}
 	
-	
 		
-	
-	
-	
-	
-	
-	
 }

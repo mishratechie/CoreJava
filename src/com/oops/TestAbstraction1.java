@@ -1,6 +1,6 @@
 package com.oops;
 
-abstract class Shape{  
+ abstract class Shape{  
 
 	abstract void draw();  
 
@@ -11,8 +11,8 @@ abstract class Shape{
 		void draw(){System.out.println("drawing rectangle");}  
 	}  
 	  
-	class Circle1 extends Shape{  
-		
+	class Circle1 extends Shape{
+
 		void draw(){System.out.println("drawing circle");}  
 	}  
 	  

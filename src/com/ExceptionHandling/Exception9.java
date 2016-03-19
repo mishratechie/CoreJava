@@ -38,6 +38,7 @@ public class Exception9
 				int i=1, j=0, k;
 
 				k=i/j;
+				System.out.println("value "+k);
 
 				System.out.println("Returning from method3().");
 		}	

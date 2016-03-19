@@ -2,7 +2,6 @@ package com.PrintFileWithExtension;
 
 import java.io.File;
 
-import java.io.File;
 import java.io.FilenameFilter;
  
 public class MyFilteredFileList {

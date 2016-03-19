@@ -1,11 +1,7 @@
 package com.MonitorAKeywordInLog;
 
-import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Properties;
-import java.util.StringTokenizer;
 
 //This program will monitor a log file for a expected word to appear into it.
 //Here we are searching for the word Tehie

@@ -6,13 +6,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
  
 public class CrunchifyFindMaxOccurance {
@@ -76,12 +73,12 @@ String inputLine = null;
 * @returns list of String
 */
 public static List<String> crunchifyFindMaxOccurance(Map<String, Integer> map, int n) {
-	List<CrunchifyComparable> l = new ArrayList();
+	List<CrunchifyComparable> l = new ArrayList<CrunchifyComparable>();
 	for (Map.Entry<String, Integer> entry : map.entrySet())
 	l.add(new CrunchifyComparable(entry.getKey(), entry.getValue()));
 	 
 	Collections.sort(l);
-	List<String> list = new ArrayList();
+	List<String> list = new ArrayList<String>();
 	for (CrunchifyComparable w : l.subList(0, n))
 	list.add(w.wordFromFile + ":" + w.numberOfOccurrence);
 	return list;

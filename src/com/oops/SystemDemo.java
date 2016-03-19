@@ -1,6 +1,5 @@
 package com.oops;
 
-import java.lang.*;
 import java.util.Properties;
 
 public class SystemDemo {
