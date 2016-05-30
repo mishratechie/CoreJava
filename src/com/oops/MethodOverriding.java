@@ -1,73 +1,48 @@
 package com.oops;
 
 
-class PPParentClass 
-{
-   int x =10;
 
-	public void pmethod()
-	{
-		System.out.println("Inside Parent class");
+ class Animal{
+
+	   public void move(){
+	      System.out.println("Animals can move");
+	   }
 	}
 
-	public void display()
-	{
-			System.out.println("Inside parent class display() : "+(x*x));
-	} 
-}
+ class Dog extends Animal{
 
-class CCChildClass extends PPParentClass
-{
-	 int y = 20;
-
-	public void cmethod()
-	{
-		System.out.println("Inside Child class");
-	} 
-
-	public void pmethod()
-	{
-		System.out.println("Inside Child class...");
-		System.out.println("Overriding super class pmethod()");
-	} 
-
-	public void calculate()
-	{
-		System.out.println("Inside Child class : "+(x*y));
-	} 
-
-};
-
-class MethodOverriding
-{
-	public static void main(String[] args) 
-	{
-		CCChildClass cc = new CCChildClass();
-
-		cc.cmethod();
-		cc.pmethod();
-		cc.display();
-		cc.calculate();
-
-		System.out.println("------------------------");
-		PPParentClass pc = new PPParentClass();
-
-		//pc.cmethod();
-		pc.pmethod();
-		pc.display();
-		//pc.calculate();
-
-//		CCChildClass cc1 = new PPParentClass();
-		System.out.println("------------------------");
-		System.out.println("");
-
-		PPParentClass cp = new CCChildClass();
-//		cp.cmethod();
-		cp.pmethod();
-		cp.display();
-//		cp.calculate();
-
-		System.out.println("x value is : " + cc.x);
-		System.out.println("y value is : " + cc.y);
+	   public void move(){
+	      System.out.println("Dogs can walk and run");
+	   } 
+	   public void bark(){
+	          System.out.println("Dogs can bark");
+	   }
+	   
 	}
-}
+
+public class MethodOverriding{
+
+	   public static void main(String args[]){
+	      //Trial#1
+		  Animal a = new Animal(); // Animal reference and object
+	      Animal b = new Dog(); // Animal reference but Dog object
+
+	      a.move();// runs the method in Animal class
+
+	      b.move();//Runs the method in Dog class
+	      
+	      
+	      
+	      //-------
+	      //Trial#2 will result in Error
+	      /*
+	  Animal a = new Animal(); // Animal reference and object
+      Animal b = new Dog(); // Animal reference but Dog object
+
+      a.move();// runs the method in Animal class
+      b.move();//Runs the method in Dog class
+      b.bark(); //Will result in error
+	       * */
+	      
+	   }
+	}
