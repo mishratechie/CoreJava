@@ -2,8 +2,6 @@ package com.InterviewPaperTest;
 
 public class ReverseInte {
 
-	
-	
 	public static void main(String[] args) {
 		
 		int input=1215;
@@ -15,7 +13,7 @@ public class ReverseInte {
 			
 			remainder=input % 10;
 		    reversedNum = (reversedNum * 10) + (remainder);
-		    input = input/10;   
+		    input = input/10;   //Storing this in int so after decimal value will be trimmed.
 		}
 		System.out.println(reversedNum);
 	}

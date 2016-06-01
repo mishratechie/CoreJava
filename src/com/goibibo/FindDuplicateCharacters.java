@@ -40,9 +40,12 @@ public class FindDuplicateCharacters{
         
         for (Character ch : characters) {
             if (charMap.containsKey(ch)) {
+            	
                 charMap.put(ch, charMap.get(ch) + 1);
+                
             } else {
-                charMap.put(ch, 1);
+                
+            	charMap.put(ch, 1);
             }
         }
 

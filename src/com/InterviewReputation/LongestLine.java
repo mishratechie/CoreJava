@@ -34,7 +34,7 @@ public class LongestLine {
 		                        maxLength = currentLine.length();
 		                        longLine = currentLine;
 		                }
-		                lineCount++;
+		             
 		               
 		}
 		 System.out.println("Longest Line is  : "+longLine);
