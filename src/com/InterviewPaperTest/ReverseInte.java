@@ -12,6 +12,8 @@ public class ReverseInte {
 		while (input > 0) {
 			
 			remainder=input % 10;
+			//modulo operation finds the remainder after division of one number by another (sometimes called modulus).
+			//Here is finds first remainder so for first time 1215=>5 ,121=>1,12=>2,1=>1
 		    reversedNum = (reversedNum * 10) + (remainder);
 		    input = input/10;   //Storing this in int so after decimal value will be trimmed.
 		}

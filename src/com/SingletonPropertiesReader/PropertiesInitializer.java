@@ -17,6 +17,7 @@ public class PropertiesInitializer {
 
     private Properties props = null;
 
+    //Private constructor so that no other class can try to create the object
     private PropertiesInitializer() throws FileNotFoundException, IOException{
 
 

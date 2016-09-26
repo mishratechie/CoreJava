@@ -13,7 +13,8 @@ public class GivenIntArrayFindSumOfX {
 
     public static void main(String[] args) {
 
-        int group[]={2,3,4,5,6,8,7};
+        //int group[]={2,3,4,5,6,8,7};
+        int group[]={2,5,4,7};
         int mySum=9;
         printPairsUsingSet(group,mySum);
 
@@ -32,8 +33,11 @@ public class GivenIntArrayFindSumOfX {
             if(!set.contains(target)){
                 set.add(value);
             }else {
-                System.out.printf("(%d, %d) %n", value, target);
+                //System.out.printf("(%d, %d) %n", value, target);
+                System.out.println("("+value+" , "+target+")");
             }
         }
+        //7 6 5 4 3 1 2
+        //2,3,4,5,6,8,7
     }
 }

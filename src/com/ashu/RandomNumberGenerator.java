@@ -10,7 +10,7 @@ public class RandomNumberGenerator {
 	  public static int getRandomNumber(int length){  
 	  
 	        Random r = new Random();  
-	  
+
 	         String number="";  
 	  
 	         int counter=0;  
@@ -31,9 +31,9 @@ public class RandomNumberGenerator {
     	 }
 	  
 	    public static void main(String[] args) {  
-	     
+
 	        System.out.println(getRandomNumber(8));
-	        System.out.println(getRandomLong(15));  
+	        System.out.println(getRandomLong(15));
 	  
 	    }  
 	

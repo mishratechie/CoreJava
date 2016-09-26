@@ -1,6 +1,7 @@
 package com.InterviewPaperTest;
 
-/*Write a program to find whether given no. is Armstrong or not. Example : Input - 153 Output - 1^3 + 5^3 + 3^3 = 153, so it is Armstrong no. */ 
+/*Write a program to find whether given no. is Armstrong or not. Example :
+Input - 153 Output - 1^3 + 5^3 + 3^3 = 153, so it is Armstrong no. */
 class arm{ 
 	public static void main(String args[]){ 
 		int num = 153; 
@@ -11,6 +12,8 @@ class arm{
 		
 		while(num > 0){ 
 			remainder = num % 10;
+			//modulo operation finds the remainder after division of one number by another (sometimes called modulus).
+			//Here is finds first remainder so for first time 1251=>5 ,121=>1,12=>2,1=>1
 			//check = check + (int)Math.pow(remainder,3);
 			check = check +(remainder*remainder*remainder);
 			num = num / 10;

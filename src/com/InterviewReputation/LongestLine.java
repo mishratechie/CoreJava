@@ -22,11 +22,8 @@ public class LongestLine {
 		Scanner input = new Scanner(file);
 		int maxLength = -1;
 		String longLine = null;
-		int lineCount = 0;
-		int charCount;
-		int totalCharCount = 0;
-		
-		String maxString;
+
+
 		 while(input.hasNextLine()) {
 			
 		                String currentLine = input.nextLine();

@@ -11,7 +11,7 @@ class FileDemo
 
     public static void main(String args[])
     {
-		File f = new File("E:/Polaris Java Schedule/Day 6/IOStreams/Read.java");
+		File f = new File("ABC.txt");
 		
 		p("File Name : " + f.getName());
 

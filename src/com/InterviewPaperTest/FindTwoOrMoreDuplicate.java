@@ -5,7 +5,7 @@ package com.InterviewPaperTest;
 	import java.util.List;
 	import java.util.Set;
 	 
-	public class FindTwoOrMoreDublicate {
+	public class FindTwoOrMoreDuplicate {
 	 
 	 
 	    public static void main(String[] args) {
@@ -16,6 +16,9 @@ package com.InterviewPaperTest;
 	        for (int i = 0; i < 5; i++) {
 	            list.add(String.valueOf(i));
 	        }
+			for (int i = 0; i < 5; i++) {
+				list.add(String.valueOf(i));
+			}
 	 
 	        System.out.println("My List : " + list);
 	        System.out.println("\nHere are the duplicate elements from list : " + findDuplicates(list));
