@@ -4,7 +4,7 @@ package com.appDirect.ExceptionGuess;
  * Created by Ashutosh on 9/26/2016.
  */
 public class ExceptionOutput1 {
-
+    //Finally executes even before return.
     public static void main(String[] args) throws Exception {
         try {
             System.out.println("A");

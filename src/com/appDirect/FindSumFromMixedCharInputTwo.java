@@ -19,7 +19,7 @@ public class FindSumFromMixedCharInputTwo {
 
         int group=0;
         int finalValue=0;
-        for(int i = 0; i <=myString.length() ; i++){
+        for(int i = 0; i <myString.length() ; i++){
 
             boolean isIt=isItADigit(myString.charAt(i));
 
@@ -43,14 +43,7 @@ public class FindSumFromMixedCharInputTwo {
 
     private static boolean isItADigit(char c) {
 
-        if(Character.isDigit(c)){
-
-            return true;
-        }
-        else{
-            return false;
-        }
-
+     return Character.isDigit(c);
 
     }
 

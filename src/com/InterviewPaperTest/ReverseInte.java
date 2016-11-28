@@ -4,7 +4,7 @@ public class ReverseInte {
 
 	public static void main(String[] args) {
 		
-		int input=1215;
+		int input=1210;
 		
 		
 		int reversedNum=0;

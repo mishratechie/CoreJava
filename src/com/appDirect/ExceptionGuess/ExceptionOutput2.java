@@ -5,6 +5,7 @@ package com.appDirect.ExceptionGuess;
  */
 public class ExceptionOutput2 {
 
+    //Finally executes even before return.
     public static void main(String[] args) throws Exception {
         try {
             System.out.println("A");
